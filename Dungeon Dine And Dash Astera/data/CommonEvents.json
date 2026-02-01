@@ -1,0 +1,7 @@
+[
+null,
+{"id":1,"list":[{"code":112,"indent":0,"parameters":[]},{"code":355,"indent":1,"parameters":["$gameVariables.setValue(8, Math.randomInt($gameMap.width()));"]},{"code":655,"indent":1,"parameters":["$gameVariables.setValue(9, Math.randomInt($gameMap.height()));"]},{"code":285,"indent":1,"parameters":[10,6,1,8,9]},{"code":111,"indent":1,"parameters":[1,10,0,5,0]},{"code":113,"indent":2,"parameters":[]},{"code":0,"indent":2,"parameters":[]},{"code":412,"indent":1,"parameters":[]},{"code":0,"indent":1,"parameters":[]},{"code":413,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"FindRandomPosition","switchId":1,"trigger":0},
+{"id":2,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
+{"id":3,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
+{"id":4,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0}
+]

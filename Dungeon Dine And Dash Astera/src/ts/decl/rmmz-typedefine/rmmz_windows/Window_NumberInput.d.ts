@@ -1,0 +1,35 @@
+declare class Window_NumberInput extends Window_Selectable {
+    protected _number: number;
+    protected _maxDigits: number;
+    protected _messageWindow?: Window_Message;
+    protected _buttons: Sprite_Button[];
+    constructor();
+    initialize(): void;
+    setMessageWindow(messageWindow: Window_Message): void;
+    start(): void;
+    updatePlacement(): void;
+    windowWidth(): number;
+    windowHeight(): number;
+    maxCols(): number;
+    maxItems(): number;
+    itemWidth(): number;
+    itemRect(index: number): Rectangle;
+    isScrollEnabled(): boolean;
+    isHoverEnabled(): boolean;
+    createButtons(): void;
+    placeButtons(): void;
+    totalButtonWidth(): number;
+    buttonSpacing(): number;
+    buttonY(): number;
+    update(): void;
+    processDigitChange(): void;
+    changeDigit(up: boolean): void;
+    isTouchOkEnabled(): boolean;
+    isOkEnabled(): boolean;
+    isCancelEnabled(): boolean;
+    processOk(): void;
+    drawItem(index: number): void;
+    onButtonUp(): void;
+    onButtonDown(): void;
+    onButtonOk(): void;
+}

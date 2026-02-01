@@ -1,0 +1,1 @@
+simpleExport("DotMoveSystem", DotMoveSystem);

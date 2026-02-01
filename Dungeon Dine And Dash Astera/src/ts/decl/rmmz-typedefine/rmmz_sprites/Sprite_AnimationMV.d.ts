@@ -1,0 +1,53 @@
+declare class Sprite_AnimationMV extends Sprite {
+    targetObjects: any;
+    protected _targets: Sprite[];
+    protected _animation: any;
+    protected _mirror: boolean;
+    protected _delay: number;
+    protected _rate: number;
+    protected _duration: number;
+    protected _flashColor: number[];
+    protected _flashDuration: number;
+    protected _screenFlashDuration: number;
+    protected _hidingDuration: number;
+    protected _hue1: number;
+    protected _hue2: number;
+    protected _bitmap1: Bitmap | null;
+    protected _bitmap2: Bitmap | null;
+    protected _cellSprites: Sprite[];
+    protected _screenFlashSprite: ScreenSprite | null;
+    initialize(): void;
+    initMembers(): void;
+    setup(targets: any[], animation: any, mirror: boolean, delay: number): void;
+    setupRate(): void;
+    setupDuration(): void;
+    update(): void;
+    updateFlash(): void;
+    updateScreenFlash(): void;
+    absoluteX(): number;
+    absoluteY(): number;
+    updateHiding(): void;
+    isPlaying(): boolean;
+    loadBitmaps(): void;
+    isReady(): boolean | null;
+    createCellSprites(): void;
+    createScreenFlashSprite(): void;
+    updateMain(): void;
+    updatePosition(): void;
+    updateFrame(): void;
+    currentFrameIndex(): number;
+    updateAllCellSprites(frame: string | any[]): void;
+    updateCellSprite(sprite: Sprite, cell: any[]): void;
+    processTimingData(timing: {
+        flashDuration: number;
+        flashScope: any;
+        flashColor: any;
+        se: {
+            name: any;
+        };
+    }): void;
+    startFlash(color: number[], duration: number): void;
+    startScreenFlash(color: any[], duration: number): void;
+    startHiding(duration: number): void;
+    onEnd(): void;
+}

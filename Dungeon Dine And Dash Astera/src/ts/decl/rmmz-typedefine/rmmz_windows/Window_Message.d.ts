@@ -1,0 +1,66 @@
+declare class Window_Message extends Window_Base {
+    protected _background: number;
+    protected _positionType: number;
+    protected _waitCount: number;
+    protected _faceBitmap: Bitmap | null;
+    protected _textState: any;
+    protected _goldWindow: Window_Gold | null;
+    protected _nameBoxWindow: Window_NameBox | null;
+    protected _choiceListWindow: Window_ChoiceList | null;
+    protected _numberInputWindow: Window_NumberInput | null;
+    protected _eventItemWindow: Window_EventItem | null;
+    protected _showFast: boolean;
+    protected _lineShowFast: boolean;
+    protected _pauseSkip: boolean;
+    initialize(rect: Rectangle): void;
+    initMembers(): void;
+    setGoldWindow(goldWindow: Window_Gold | null): void;
+    setNameBoxWindow(nameBoxWindow: Window_NameBox | null): void;
+    setChoiceListWindow(choiceListWindow: Window_ChoiceList | null): void;
+    setNumberInputWindow(numberInputWindow: Window_NumberInput | null): void;
+    setEventItemWindow(eventItemWindow: Window_EventItem | null): void;
+    clearFlags(): void;
+    update(): void;
+    checkToNotClose(): void;
+    synchronizeNameBox(): void;
+    canStart(): boolean;
+    startMessage(): void;
+    newLineX(textState: {
+        rtl: any;
+    }): number;
+    updatePlacement(): void;
+    updateBackground(): void;
+    terminateMessage(): void;
+    updateWait(): boolean;
+    updateLoading(): boolean;
+    updateInput(): boolean;
+    isAnySubWindowActive(): boolean;
+    updateMessage(): boolean;
+    shouldBreakHere(textState: any): boolean;
+    canBreakHere(textState: {
+        text: {
+            [x: string]: any;
+        };
+        index: string | number;
+        rtl: any;
+    }): boolean;
+    onEndOfText(): void;
+    startInput(): boolean;
+    isTriggered(): boolean;
+    doesContinue(): boolean;
+    areSettingsChanged(): boolean;
+    updateShowFast(): void;
+    newPage(textState: any): void;
+    updateSpeakerName(): void;
+    loadMessageFace(): void;
+    drawMessageFace(): void;
+    processControlCharacter(textState: any, c: string): void;
+    processNewLine(textState: any): void;
+    processNewPage(textState: any): void;
+    isEndOfText(textState: any): boolean;
+    needsNewPage(textState: any): boolean;
+    processEscapeCharacter(code: string, textState: any): void;
+    startWait(count: number): void;
+    startPause(): void;
+    isWaiting(): boolean;
+}

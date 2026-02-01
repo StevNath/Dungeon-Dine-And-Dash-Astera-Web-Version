@@ -1,0 +1,35 @@
+declare class _StorageManager {
+    constructor();
+    static _forageKeys: any[];
+    static _forageKeysUpdated: boolean;
+    static isLocalMode(): boolean;
+    static saveObject(saveName: string, object: any): Promise<any>;
+    static loadObject(saveName: string): Promise<any>;
+    static objectToJson(object: any): Promise<string>;
+    static jsonToObject(json: string): Promise<unknown>;
+    static jsonToZip(json: string): Promise<any>;
+    static zipToJson(zip: any): Promise<unknown>;
+    static saveZip(saveName: string, zip: any): any;
+    static loadZip(saveName: string): any;
+    static exists(saveName: string): any;
+    static remove(saveName: string): any;
+    static saveToLocalFile(saveName: string, zip: any): Promise<unknown>;
+    static loadFromLocalFile(saveName: string): Promise<unknown>;
+    static localFileExists(saveName: string): any;
+    static removeLocalFile(saveName: string): void;
+    static saveToForage(saveName: string, zip: any): any;
+    static loadFromForage(saveName: string): any;
+    static forageExists(saveName: string): boolean;
+    static removeForage(saveName: string): any;
+    static updateForageKeys(): any;
+    static forageKeysUpdated(): boolean;
+    static fsMkdir(path: string): void;
+    static fsRename(oldPath: string, newPath: string): void;
+    static fsUnlink(path: string): void;
+    static fsReadFile(path: string): any;
+    static fsWriteFile(path: string, data: any): void;
+    static fileDirectoryPath(): string;
+    static filePath(saveName: string): string;
+    static forageKey(saveName: string): string;
+    static forageTestKey(): string;
+}

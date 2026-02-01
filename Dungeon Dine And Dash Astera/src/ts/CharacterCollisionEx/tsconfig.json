@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "module": "System",
+        "declaration": true,
+        "baseUrl": ".",
+        "out": "../../js/plugins/build/CharacterCollisionEx.js",
+        "inlineSourceMap": false,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strict": true,
+        "removeComments": false,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        // "isolatedModules": true,
+        "esModuleInterop": true
+    },
+    "include": [
+        "../decl/*",
+        "../decl/rmmz-typedefine/*",
+        "../decl/rmmz-typedefine/RMMZData/*",
+        "../decl/rmmz-typedefine/rmmz_core/*",
+        "../decl/rmmz-typedefine/rmmz_managers/*",
+        "../decl/rmmz-typedefine/rmmz_objects/*",
+        "../decl/rmmz-typedefine/rmmz_scenes/*",
+        "../decl/rmmz-typedefine/rmmz_sprites/*",
+        "../decl/rmmz-typedefine/rmmz_windows/*",
+        "./*.ts"
+    ]
+}

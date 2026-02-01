@@ -1,0 +1,34 @@
+declare class Scene_MenuBase extends Scene_Base {
+    protected _actor: any;
+    protected _backgroundFilter: PIXI.filters.BlurFilter;
+    protected _backgroundSprite: Sprite;
+    protected _helpWindow: Window_Help;
+    protected _cancelButton: Sprite_Button;
+    protected _pageupButton: Sprite_Button;
+    protected _pagedownButton: Sprite_Button;
+    initialize(): void;
+    create(): void;
+    update(): void;
+    helpAreaTop(): number;
+    helpAreaBottom(): number;
+    helpAreaHeight(): number;
+    mainAreaTop(): number;
+    mainAreaBottom(): number;
+    mainAreaHeight(): number;
+    actor(): any;
+    updateActor(): void;
+    createBackground(): void;
+    setBackgroundOpacity(opacity: number): void;
+    createHelpWindow(): void;
+    helpWindowRect(): Rectangle;
+    createButtons(): void;
+    needsCancelButton(): boolean;
+    createCancelButton(): void;
+    needsPageButtons(): boolean;
+    createPageButtons(): void;
+    updatePageButtons(): void;
+    arePageButtonsEnabled(): boolean;
+    nextActor(): void;
+    previousActor(): void;
+    onActorChange(): void;
+}

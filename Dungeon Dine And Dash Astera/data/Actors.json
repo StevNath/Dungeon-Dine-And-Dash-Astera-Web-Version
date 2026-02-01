@@ -1,0 +1,11 @@
+[
+null,
+{"id":1,"battlerName":"stevnath_battler","characterIndex":0,"characterName":"Actor1","classId":6,"equips":[1,27,0,2,0],"faceIndex":0,"faceName":"stevnath_Ffull","traits":[],"initialLevel":1,"maxLevel":99,"name":"Zephyr","nickname":"","note":"","profile":""},
+{"id":2,"battlerName":"ragul_batler","characterIndex":1,"characterName":"Actor1","classId":5,"equips":[13,0,0,2,0],"faceIndex":0,"faceName":"ragul_Ffull","traits":[],"initialLevel":1,"maxLevel":99,"name":"Ragul","nickname":"","note":"","profile":""},
+{"id":3,"battlerName":"putra_batler","characterIndex":2,"characterName":"mzchar","classId":2,"equips":[7,0,0,2,0],"faceIndex":0,"faceName":"putra_Ffull","traits":[],"initialLevel":1,"maxLevel":99,"name":"Perceval","nickname":"","note":"","profile":""},
+{"id":4,"battlerName":"Lynae_battler","characterIndex":3,"characterName":"mzchar","classId":4,"equips":[1,27,0,2,0],"faceIndex":1,"faceName":"Lynae_Ffull","traits":[],"initialLevel":1,"maxLevel":99,"name":"lynae","nickname":"","note":"","profile":""},
+{"id":5,"battlerName":"Arlena_battle","characterIndex":4,"characterName":"mzchar","classId":8,"equips":[0,0,0,0,0],"faceIndex":1,"faceName":"Arlena_Ffull","traits":[],"initialLevel":1,"maxLevel":99,"name":"Arlena","nickname":"","note":"","profile":""},
+{"id":6,"battlerName":"","characterIndex":5,"characterName":"mzchar","classId":7,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"basechar_face","traits":[],"initialLevel":1,"maxLevel":1,"name":"Haruto","nickname":"","note":"","profile":""},
+{"id":7,"battlerName":"Actor2_4","characterIndex":3,"characterName":"Actor2","classId":7,"equips":[38,0,52,4,77],"faceIndex":3,"faceName":"Actor2","traits":[],"initialLevel":1,"maxLevel":99,"name":"Yuna","nickname":"","note":"","profile":""},
+{"id":8,"battlerName":"Actor2_1","characterIndex":0,"characterName":"Actor2","classId":3,"equips":[8,0,49,5,80],"faceIndex":0,"faceName":"Actor2","traits":[],"initialLevel":1,"maxLevel":99,"name":"Stark","nickname":"","note":"","profile":""}
+]

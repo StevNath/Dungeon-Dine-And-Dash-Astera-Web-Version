@@ -1,0 +1,30 @@
+declare class Scene_Equip extends Scene_MenuBase {
+    protected _statusWindow: Window_EquipStatus;
+    protected _commandWindow: Window_EquipCommand;
+    protected _slotWindow: Window_EquipSlot;
+    protected _itemWindow: Window_EquipItem;
+    initialize(): void;
+    create(): void;
+    createStatusWindow(): void;
+    statusWindowRect(): Rectangle;
+    createCommandWindow(): void;
+    commandWindowRect(): Rectangle;
+    createSlotWindow(): void;
+    slotWindowRect(): Rectangle;
+    createItemWindow(): void;
+    itemWindowRect(): Rectangle;
+    statusWidth(): number;
+    needsPageButtons(): boolean;
+    arePageButtonsEnabled(): boolean;
+    refreshActor(): void;
+    commandEquip(): void;
+    commandOptimize(): void;
+    commandClear(): void;
+    onSlotOk(): void;
+    onSlotCancel(): void;
+    onItemOk(): void;
+    executeEquipChange(): void;
+    onItemCancel(): void;
+    onActorChange(): void;
+    hideItemWindow(): void;
+}

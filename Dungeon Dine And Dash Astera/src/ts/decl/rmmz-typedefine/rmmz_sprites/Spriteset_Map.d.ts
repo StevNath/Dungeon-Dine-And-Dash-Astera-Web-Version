@@ -1,0 +1,36 @@
+declare class Spriteset_Map extends Spriteset_Base {
+    protected _balloonSprites: Sprite_Balloon[];
+    protected _characterSprites: Sprite_Character[];
+    protected _parallax: any;
+    protected _tilemap: Tilemap;
+    protected _tileset: any;
+    protected _shadowSprite: Sprite;
+    protected _destinationSprite: Sprite_Destination;
+    protected _weather: Weather;
+    protected _parallaxName: string;
+    initialize(): void;
+    destroy(options?: any): void;
+    loadSystemImages(): void;
+    createLowerLayer(): void;
+    update(): void;
+    hideCharacters(): void;
+    createParallax(): void;
+    createTilemap(): void;
+    loadTileset(): void;
+    createCharacters(): void;
+    createShadow(): void;
+    createDestination(): void;
+    createWeather(): void;
+    updateTileset(): void;
+    updateParallax(): void;
+    updateTilemap(): void;
+    updateShadow(): void;
+    updateWeather(): void;
+    updateBalloons(): void;
+    processBalloonRequests(): void;
+    createBalloon(request: IBalloonRequest): void;
+    removeBalloon(sprite: Sprite_Balloon): void;
+    removeAllBalloons(): void;
+    findTargetSprite(target: Game_Character): Sprite_Character | undefined;
+    animationBaseDelay(): number;
+}
